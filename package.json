@@ -1,0 +1,35 @@
+{
+  "name": "polkaate",
+  "version": "1.0.0",
+  "description": "This project can be used to query kusama chain",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "prepack": "rm -rf dist && npm run build",
+    "test": "jest",
+    "codegen": "./node_modules/.bin/subql codegen",
+    "start:docker": "docker-compose pull && docker-compose up"
+  },
+  "homepage": "https://github.com/subquery/subql-starter",
+  "repository": "github:subquery/subql-starter",
+  "files": [
+    "dist",
+    "schema.graphql",
+    "project.yaml"
+  ],
+  "author": "Kami Ekbatanifard",
+  "license": "MIT",
+  "devDependencies": {
+    "@polkadot/api": "^8",
+    "@subql/cli": "latest",
+    "@subql/types": "latest",
+    "typescript": "^4.1.3"
+  },
+  "resolutions": {
+    "ipfs-unixfs": "6.0.6"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "umi-request": "^1.4.0"
+  }
+}
