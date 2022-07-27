@@ -3,7 +3,9 @@ import { SubstrateExtrinsic } from "@subql/types";
 import { Balance } from "@polkadot/types/interfaces";
 import { CallBase } from "@polkadot/types/types/calls";
 import { AnyTuple } from "@polkadot/types/types/codec";
-import { Vec, GenericEventData } from '@polkadot/types';
+import { Vec, GenericEvent } from '@polkadot/types';
+import { IEvent } from '@polkadot/types/types';
+import type { Codec } from '@polkadot/types-codec/types';
 
 const batchCalls = ["batch", "batchAll"]
 const transferCalls = ["transfer", "transferKeepAlive"]
@@ -107,7 +109,7 @@ export function calculateFeeAsString(extrinsic?: SubstrateExtrinsic, from: strin
     }
 }
 
-export function getEventData(event: SubstrateEvent): GenericEventData {
+export function getEventData(event: SubstrateEvent): IEvent<Codec[]>['data'] {
     return event.event.data
 }
 
