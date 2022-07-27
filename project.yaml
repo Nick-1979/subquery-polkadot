@@ -8,8 +8,8 @@ runner:
   query:
     name: "@subql/query"
     version: "*"
-description: This project can be used to query kusama chain
-repository: "https://github.com/Nick-1979/subquery/subql-starter"
+description: This project can be used to query polkadot chain
+repository: "https://github.com/Nick-1979/subquery-polkadot"
 schema:
   file: ./schema.graphql
 network:

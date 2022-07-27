@@ -1,7 +1,7 @@
 {
   "name": "polkaate",
   "version": "1.0.0",
-  "description": "This project can be used to query kusama chain",
+  "description": "This project can be used to query polkadot chain",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc -b",
@@ -10,8 +10,8 @@
     "codegen": "./node_modules/.bin/subql codegen",
     "start:docker": "docker-compose pull && docker-compose up"
   },
-  "homepage": "https://github.com/subquery/subql-starter",
-  "repository": "github:subquery/subql-starter",
+  "homepage": "https://github.com/Nick-1979/subquery-polkadot",
+  "repository": "github:Nick-1979/subquery-polkadot",
   "files": [
     "dist",
     "schema.graphql",
