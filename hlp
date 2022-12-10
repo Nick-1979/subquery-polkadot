@@ -1,0 +1,5 @@
+
+export SUBQL_ACCESS_TOKEN=MTA5MTgxMzU1WgzS5gKpSXYalo9WIIKk
+// Publish it from your project's root directory
+
+subql publish

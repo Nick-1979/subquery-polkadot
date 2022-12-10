@@ -8,7 +8,7 @@ runner:
   query:
     name: "@subql/query"
     version: "*"
-description: This project can be used to query polkadot chain
+description: This project can be used to query Polkadot chain
 repository: "https://github.com/Nick-1979/subquery-polkadot"
 schema:
   file: ./schema.graphql
